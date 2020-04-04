@@ -5,7 +5,7 @@ all: test $(SRC).html slides.html revealjs
 .PHONY: show showpdf clean deploy
 
 slides.html: $(SRC).md makefile
-	pandoc --mathjax -t revealjs -s -o $@ $< -V revealjs-url=revealjs -V theme=moon
+	pandoc --mathjax -t revealjs -s -o $@ $< -V revealjs-url=revealjs -V theme=blood
 
 revealjs:
 	wget https://github.com/hakimel/reveal.js/archive/3.8.0.zip -O reveal.zip
